@@ -1,0 +1,7 @@
+services:
+    TBoileau\EmailHandlerBundle\Factory\EmailManagerFactoryInterface: '@tboileau.email_handler.manager_factory'
+    tboileau.email_handler.manager_factory:
+        class: TBoileau\EmailHandlerBundle\Factory\EmailManagerFactory
+        arguments:
+            - '@mailer'
+            -
