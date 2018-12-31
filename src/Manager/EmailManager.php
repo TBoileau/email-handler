@@ -36,7 +36,7 @@ class EmailManager implements EmailManagerInterface
      * @param \Swift_Mailer $mailer
      * @param mixed|null $data
      */
-    public function __construct(EmailInterface $email, \Swift_Mailer $mailer, ?mixed $data)
+    public function __construct(EmailInterface $email, \Swift_Mailer $mailer, $data = null)
     {
         $this->email = $email;
         $this->mailer = $mailer;
