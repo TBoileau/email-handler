@@ -38,6 +38,7 @@ use TBoileau\EmailHandlerBundle\Email\EmailInterface;
  * @method EmailManagerInterface attach(\Swift_Mime_SimpleMimeEntity $entity)
  * @method EmailManagerInterface detach(\Swift_Mime_SimpleMimeEntity $entity)
  * @method EmailManagerInterface embed(\Swift_Mime_SimpleMimeEntity $entity)
+ * @method EmailManagerInterface setBody($content, $chartset = null)
  */
 interface EmailManagerInterface
 {
