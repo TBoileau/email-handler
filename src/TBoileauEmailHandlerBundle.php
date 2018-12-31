@@ -4,7 +4,7 @@ namespace TBoileau\EmailHandlerBundle;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
-use TBoileau\EmailHandlerBundle\DependencyInjection\Compiler\FormHandlerPass;
+use TBoileau\EmailHandlerBundle\DependencyInjection\Compiler\EmailHandlerPass;
 
 /**
  * Class TBoileauEmailHandlerBundle
@@ -17,7 +17,7 @@ class TBoileauEmailHandlerBundle extends Bundle
     {
         parent::build($container);
 
-        $container->addCompilerPass(new FormHandlerPass());
+        $container->addCompilerPass(new EmailHandlerPass());
     }
 
 }
