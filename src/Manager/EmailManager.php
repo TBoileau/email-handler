@@ -73,7 +73,7 @@ class EmailManager implements EmailManagerInterface
      */
     public function send(): int
     {
-        $this->email->buildEmail($this);
+        $this->email->buildMessage($this);
         return $this->mailer->send($this->message);
     }
 
